@@ -69,4 +69,58 @@ FF_ALL_ARCHS_IOS8_SDK="arm64 i386 x86_64"
 
 ### 三、打包IJKMediaFramework.framework框架
 
+#### 首先打开工程IJKMediaPlayer.xcodeproj, 位置如下图:
+
+![image](https://upload-images.jianshu.io/upload_images/1803339-607cc84c212faf90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
+
+#### 添加 openssl 相关包以支持 https
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/2087622254.png)
+
+#### 打包 framwork
+> 1.配置 Release 模式如果下图
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/666544080.png)
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/4092292338.png)
+
+> 2. 配置模拟器 framework
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/3861753393.png)
+
+> 如图操作，然后 command+b 编译即可
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/3830063398.png)
+
+#### 合并 framework
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/234251722.png)
+
+> 准备合并:
+
+打开终端, 先 cd 到 Products 目录下
+
+然后执行: lipo -create 真机framework路径 模拟器framework路径 -output 合并的文件路径
+
+```
+lipo -create Release-iphoneos/IJKMediaFramework.framework/IJKMediaFramework Release-iphonesimulator/IJKMediaFramework.framework/IJKMediaFramework -output IJKMediaFramework
+
+```
+![image](https://blog.wskfz.com/usr/uploads/2018/04/1012295434.png)
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/3198101866.png)
+
+
+
 ### 四、集成ijkplayer
+
+#### 导入 framework
+
+直接将 IJKMediaFramework.framework 拖入到工程中即可
+
+注意记得勾选 Copy items if needed 和 对应的 target
+
+#### 添加依赖库
+
+![image](https://blog.wskfz.com/usr/uploads/2018/04/1293654705.png)
+

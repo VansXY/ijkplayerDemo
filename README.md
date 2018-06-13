@@ -4,6 +4,8 @@
 
 ### 一、下载ijkplayer
 
+https://github.com/Bilibili/ijkplayer
+
 ### 二、编译 ijkplayer
 
 ### 三、打包IJKMediaFramework.framework框架

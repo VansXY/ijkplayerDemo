@@ -18,7 +18,8 @@ cd ijkplayer-ios
 
 ```
 
-目录结构：
+> 目录结构：
+
 ![image](https://upload-images.jianshu.io/upload_images/1803339-c3b8f8bcae855612.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/430)
 
 ### 二、编译 ijkplayer
@@ -62,7 +63,8 @@ make: *** [libavcodec/arm/aacpsdsp_neon.o] Error 1
 
 > 报错原因是因为xcode对32位的支持弱化了，可以在compile-ffmpeg.sh里面删除**armv7**
 FF_ALL_ARCHS_IOS8_SDK="arm64 i386 x86_64"
-再次执行
+
+> 再次执行
 ./compile-ffmpeg.sh all
 
 ### 三、打包IJKMediaFramework.framework框架

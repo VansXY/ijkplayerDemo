@@ -24,10 +24,10 @@ cd ijkplayer-ios
 
 ### 二、编译 ijkplayer
 
-#### 获取 ffmpeg 并初始化
+#### 1.获取 ffmpeg 并初始化
 > ./init-ios.sh
 
-#### 添加 https 支持
+#### 2.添加 https 支持
 最后会生成支持 https 的静态文件 libcrypto.a 和 libssl.a, 如果不需要可以跳过这一步
 
 ```
@@ -41,7 +41,7 @@ echo 'export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-openssl"' >> ../
 
 ```
 
-#### 编译
+#### 3.编译
 ```
 ./compile-ffmpeg.sh clean
 
@@ -69,15 +69,15 @@ FF_ALL_ARCHS_IOS8_SDK="arm64 i386 x86_64"
 
 ### 三、打包IJKMediaFramework.framework框架
 
-#### 首先打开工程IJKMediaPlayer.xcodeproj, 位置如下图:
+#### 1.首先打开工程IJKMediaPlayer.xcodeproj, 位置如下图:
 
 ![image](https://upload-images.jianshu.io/upload_images/1803339-607cc84c212faf90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
 
-#### 添加 openssl 相关包以支持 https
+#### 2.添加 openssl 相关包以支持 https
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/2087622254.png)
 
-#### 打包 framwork
+#### 3.打包 framwork
 > 1.配置 Release 模式如果下图
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/666544080.png)
@@ -92,7 +92,7 @@ FF_ALL_ARCHS_IOS8_SDK="arm64 i386 x86_64"
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/3830063398.png)
 
-#### 合并 framework
+#### 4.合并 framework
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/234251722.png)
 
@@ -114,13 +114,13 @@ lipo -create Release-iphoneos/IJKMediaFramework.framework/IJKMediaFramework Rele
 
 ### 四、集成ijkplayer
 
-#### 导入 framework
+#### 1.导入 framework
 
 直接将 IJKMediaFramework.framework 拖入到工程中即可
 
 注意记得勾选 Copy items if needed 和 对应的 target
 
-#### 添加依赖库
+#### 2.添加依赖库
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/1293654705.png)
 

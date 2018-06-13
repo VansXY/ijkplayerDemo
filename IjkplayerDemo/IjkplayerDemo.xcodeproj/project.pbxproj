@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E116665120D0E9B100584018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E116665020D0E9B100584018 /* AppDelegate.m */; };
-		E116665420D0E9B100584018 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E116665320D0E9B100584018 /* ViewController.m */; };
 		E116665720D0E9B100584018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E116665520D0E9B100584018 /* Main.storyboard */; };
 		E116665920D0E9B200584018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E116665820D0E9B200584018 /* Assets.xcassets */; };
 		E116665C20D0E9B200584018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E116665A20D0E9B200584018 /* LaunchScreen.storyboard */; };
 		E116665F20D0E9B200584018 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E116665E20D0E9B200584018 /* main.m */; };
 		E116666920D0E9B200584018 /* IjkplayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E116666820D0E9B200584018 /* IjkplayerDemoTests.m */; };
 		E116667420D0E9B200584018 /* IjkplayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E116667320D0E9B200584018 /* IjkplayerDemoUITests.m */; };
+		E194EB5C20D11BCA004B1704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E194EB5B20D11BCA004B1704 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		E116664F20D0E9B100584018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E116665020D0E9B100584018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E116665220D0E9B100584018 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E116665320D0E9B100584018 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E116665620D0E9B100584018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E116665820D0E9B200584018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E116665B20D0E9B200584018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		E116666F20D0E9B200584018 /* IjkplayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IjkplayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E116667320D0E9B200584018 /* IjkplayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IjkplayerDemoUITests.m; sourceTree = "<group>"; };
 		E116667520D0E9B200584018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E194EB5B20D11BCA004B1704 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				E116664F20D0E9B100584018 /* AppDelegate.h */,
 				E116665020D0E9B100584018 /* AppDelegate.m */,
 				E116665220D0E9B100584018 /* ViewController.h */,
-				E116665320D0E9B100584018 /* ViewController.m */,
+				E194EB5B20D11BCA004B1704 /* ViewController.m */,
 				E116665520D0E9B100584018 /* Main.storyboard */,
 				E116665820D0E9B200584018 /* Assets.xcassets */,
 				E116665A20D0E9B200584018 /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E116665420D0E9B100584018 /* ViewController.m in Sources */,
+				E194EB5C20D11BCA004B1704 /* ViewController.m in Sources */,
 				E116665F20D0E9B200584018 /* main.m in Sources */,
 				E116665120D0E9B100584018 /* AppDelegate.m in Sources */,
 			);

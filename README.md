@@ -2,10 +2,10 @@
 
 # 基于ijkplayer做的直播demo
 
-### 下载ijkplayer
+### 一、下载ijkplayer
 
-### 编译 ijkplayer
+### 二、编译 ijkplayer
 
-### 打包IJKMediaFramework.framework框架
+### 三、打包IJKMediaFramework.framework框架
 
-### 集成ijkplayer
+### 四、集成ijkplayer

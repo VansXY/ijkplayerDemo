@@ -124,3 +124,11 @@ lipo -create Release-iphoneos/IJKMediaFramework.framework/IJKMediaFramework Rele
 
 ![image](https://blog.wskfz.com/usr/uploads/2018/04/1293654705.png)
 
+### 五、demo
+添加ijkplayer头文件
+```
+#import <IJKMediaFramework/IJKMediaFramework.h>
+```
+编译无误，表示集成成功~
+
+

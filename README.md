@@ -2,7 +2,7 @@
 
 # 基于ijkplayer做的直播demo
 
-废话不多说，GitHub上上传的文件不能大于100M，导致 Framework 上传不上来，需要的可以从下面链接下载
+废话不多说，如果大家不想通过以下方法制作framework，下面链接有现成的，由于GitHub上上传的文件不能大于100M，导致 Framework 上传不上来，需要的可以从下面链接取
 
 > 链接:https://pan.baidu.com/s/1wJEGaACYHAEvzlpZmWnHEQ  
 > 密码:tb7e

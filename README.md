@@ -2,6 +2,9 @@
 
 # 基于ijkplayer做的直播demo
 
+废话不多说，GitHub上上传的文件不能大于100M，导致 Framework 上传不上来，需要的可以从下面链接下载
+链接:https://pan.baidu.com/s/1wJEGaACYHAEvzlpZmWnHEQ  密码:tb7e
+
 ### 一、下载ijkplayer
 
 在一个合适的位置新建一个文件夹, 假设为桌面, 文件夹名为 **ijkplayer**
